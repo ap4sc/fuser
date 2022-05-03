@@ -8,7 +8,7 @@ fuser = "0.11.0"
 libc = "0.2"
 ```
 
-Include the following packages? in your `main.rs`.
+Include the following crates in your `main.rs`.
 
 ```rs
 use fuser::{
