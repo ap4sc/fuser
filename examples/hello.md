@@ -59,7 +59,7 @@ impl Filesystem for HelloFS {
 }
 ```
 
-We can mount our create filesystem as read-only at the directory `/mnt/hellofuser`. 
+We can create our filesystem as read-only at the directory `/mnt/hellofuser`. 
 
 ```rs
 fn main() {
@@ -83,7 +83,7 @@ $ stat /mnt/hellofuser
 ... 1 drwxr-xr-x 2 youruser yourgroup 0 0 "Dec 31 16:00:00 1969" ...
 ```
 
-Now let's create a single file in this directory called "hello.txt". We again set its attributes using the `FileAttr` struct.
+Now let's create a single file in the base directory called "hello.txt". We again set its attributes using the `FileAttr` struct.
 
 ```rs
 const HELLO_TXT_NAME: &str = "hello.txt";
